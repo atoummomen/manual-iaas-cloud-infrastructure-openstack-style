@@ -1,0 +1,18 @@
+network:
+  version: 2
+  ethernets:
+    ens33:
+      match:
+        macaddress: "00:0c:29:0d:df:d1"
+      dhcp4: true
+      dhcp6: true
+      set-name: "eth0"
+      dhcp-identifier: mac
+
+    ens34:
+      match:
+        macaddress: "00:0c:29:0d:df:db"
+      dhcp4: false
+      dhcp6: false
+      set-name: "eth1"
+      addresses: [192.168.56.100/24]
