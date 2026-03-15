@@ -1,0 +1,26 @@
+<network>
+  
+  <name>br-int</name>
+  <forward mode='bridge'/>
+  <bridge name='br-int'/>
+  <virtualport type='openvswitch'/>
+
+  <portgroup name='vnet-red'>
+    <vlan>
+      <tag id='50'/>
+    </vlan>
+  </portgroup>
+
+  <portgroup name='vnet-blue'>
+    <vlan>
+      <tag id='60'/>
+    </vlan>
+  </portgroup>
+
+  <portgroup name='vnet-green'>
+    <vlan>
+      <tag id='70'/>
+    </vlan>
+  </portgroup>
+
+</network>
