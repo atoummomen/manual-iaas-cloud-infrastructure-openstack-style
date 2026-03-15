@@ -1,0 +1,12 @@
+strict-order
+pid-file=/home/ubuntu/vnetred.pid
+except-interface=lo
+bind-dynamic
+interface=qd-vnetred-tap
+dhcp-option=3,192.168.0.1
+dhcp-option=6,8.8.8.8
+no-resolv
+dhcp-range=192.168.0.200,192.168.0.254
+dhcp-lease-max=55
+dhcp-hostsfile=/home/ubuntu/vnet1.hostsfile
+addn-hosts=/home/ubuntu/vnet1.addnhosts

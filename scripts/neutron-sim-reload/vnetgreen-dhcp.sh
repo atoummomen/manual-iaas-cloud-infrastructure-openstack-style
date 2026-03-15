@@ -1,0 +1,12 @@
+strict-order
+pid-file=/home/ubuntu/vnetgreen.pid
+except-interface=lo
+bind-dynamic
+interface=qd-vnetgrn-tap
+dhcp-option=3,192.168.2.1
+dhcp-option=6,8.8.8.8
+no-resolv
+dhcp-range=192.168.2.200,192.168.2.254
+dhcp-lease-max=55
+dhcp-hostsfile=/home/ubuntu/vnet3.hostsfile
+addn-hosts=/home/ubuntu/vnet3.addnhosts
